@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="tittle">
+        <h1>Listado de motociclistas.</h1>
+    </div>
+    <div *ngFor="let moto of arrMoto; let indx = index">
+        <div [ngClass]="{
+            'card':getStyleCard(moto.libres),
+            'cardBad':!getStyleCard(moto.libres),
+            'cardSelected': moto.uso
+        }" (click)="selectMotociclista(moto.libres,indx)">
+            <div class="item">
+                <h4>Horario: {{moto.hora}}</h4>
+            </div>
+            <div class="item">
+                <h4>Disponibles: {{moto.libres}}</h4>
+            </div>
+        </div>
+    </div>
+</div>
