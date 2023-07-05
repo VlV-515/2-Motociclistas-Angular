@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Motociclistas": {
+    "Motociclistas-vlv": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:class": {
@@ -38,7 +38,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Motociclistas",
+            "outputPath": "dist/Motociclistas-vlv",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -89,10 +89,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Motociclistas:build:production"
+              "browserTarget": "Motociclistas-vlv:build:production"
             },
             "development": {
-              "browserTarget": "Motociclistas:build:development"
+              "browserTarget": "Motociclistas-vlv:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -100,7 +100,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Motociclistas:build"
+            "browserTarget": "Motociclistas-vlv:build"
           }
         },
         "test": {
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "Motociclistas"
+  "defaultProject": "Motociclistas-vlv"
 }
